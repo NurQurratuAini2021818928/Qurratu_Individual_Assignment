@@ -1,0 +1,104 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body background="assets/images/brown.jpg">
+<a name="Top_Page"> </a> 
+  <header>
+    
+<!--- TO CALL THE CSS --->
+<center> <div id="clock">8:10:45</div> </center>
+<!--- TO LINK FOR A CURRENT TIME --->
+<script src="clock2.js"></script>
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+<img src="assets/images/1.png" width="70%" align="center" border="2" alt="Header Image">
+<br><br>
+<div class"container">
+<a href="index.html"> <button class="button-74"> About </button> </a>
+<a href="Hobby.html"> <button class="button-74"> Hobby </button> </a>
+<a href="Family.html"> <button class="button-74"> Family </button> </a>
+<a href="Friends.html"> <button class="button-74"> Friends </button> </a>
+<a href="Education.html"> <button class="button-74"> Education </button> </a>
+<a href="Contact.html"> <button class="button-74"> Contact </button> </a>
+</div>
+  </header>
+<br>
+<h2> Get to Know About Me </h2>
+<center> <img src="assets/images/self 1.jpg" width="30%" border="2"> </center>
+<br>
+<h3> My name is Nur Qurratu Aini  Binti Kamalrolzaman. I am 20 years old. My Birthday is 27 <sup>th</sup> November 2003. I am from Muar, Johor. I studied at Universiti Teknologi MARA, Campus Kedah. I am from Faculty Library Management (IM120). My Favourite food is Ayam Masak Asam Pedas. My Favourite drink is Fresh Orange. I love to hear all the song from One direction, Why Dont' We, Backstreet Boy, Westlife, The Vamps, etc. I love to make all people Happy and Laughing. I love to eat and sleep. </h3>
+<br>
+<h2> Here's the music I love to hear </h2>
+<center> 
+<center> <font face="Century Gothic"> One Direction: Right Now </font>
+<center> <audio controls autoplaymuted> 
+<source src="assets/audio/RightNow.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<center> <font face="Century Gothic"> Justin Bieber: Ghost </font>
+<center> <audio controls autoplaymuted> 
+<source src="assets/audio/Ghost.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<center> <font face="Century Gothic"> Why Don't We: Let Me Down Easy </font>
+<center> <audio controls autoplaymuted> 
+<source src="assets/audio/Downeasy.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<center> <font face="Century Gothic"> The Vamps: Just My Type </font> 
+<center> <audio controls autoplaymuted> 
+<source src="assets/audio/Vamps.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<center> <font face="Century Gothic"> Why Don't We: Grey </font> 
+<center> <audio controls autoplaymuted> 
+<source src="assets/audio/Grey.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<h2> A Little About Me </h2>
+<br>
+<a href="assets/images/self 2.jpg"> <img src="assets/images/self 2.jpg" width="200px" border="2"></a>
+
+<a href="assets/images/self 3.jpg"> <img src="assets/images/self 3.jpg" width="200px" border="2"></a>
+
+<a href="assets/images/self 4.jpg"> <img src="assets/images/self 4.jpg" width="200px" border="2"></a>
+
+<br><br><br>
+<a href="#Top_Page"> <img src="assets/images/arrow_up.png" width="70px" align="right"></a>  
+<br><br><br>
+  <footer>
+   <hr>
+  <center> <p> &copy; 2023 My Personal Website. All rights reserved. </p> </center>
+  </footer>
+</body>
+</html>
+

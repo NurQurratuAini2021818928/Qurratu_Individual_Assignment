@@ -1,0 +1,87 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body background="assets/images/brown.jpg">
+<a name="Top_Page"> </a> 
+  <header>
+    
+<!--- TO CALL THE CSS --->
+<center> <div id="clock">8:10:45</div> </center>
+<!--- TO LINK FOR A CURRENT TIME --->
+<script src="clock2.js"></script>
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+<img src="assets/images/1.png" width="70%" align="center" border="2" alt="Header Image">
+<br><br>
+<div class"container">
+<a href="index.html"> <button class="button-74"> About </button> </a>
+<a href="Hobby.html"> <button class="button-74"> Hobby </button> </a>
+<a href="Family.html"> <button class="button-74"> Family </button> </a>
+<a href="Friends.html"> <button class="button-74"> Friends </button> </a>
+<a href="Education.html"> <button class="button-74"> Education </button> </a>
+<a href="Contact.html"> <button class="button-74"> Contact </button> </a>
+</div>
+  </header>
+<br>
+<h2> Wish we will still get in touch </h2>
+<br>
+<center>
+<a href="https://instagram.com/qurs.ain?igshid=ZDc4ODBmNjlmNQ==" target="_blank"> <img src="assets/images/instagram.jpg" width="75px"> </a>
+<br>
+<h3> Instagram </h3>
+<br><br>
+<a href="https://www.facebook.com/dandarain.nur?mibextid=ZbWKwL" target="_blank"> <img src="assets/images/facebook.jpg" width="75px"> </a>
+<br>
+<h3> Facebook </h3>
+<br><br>
+<a href="https://youtube.com/@qurratuaini8865" target="_blank"> <img src="assets/images/youtube.png" width="75px"> </a>
+<br>
+<h3> Youtube </h3>
+<br><br>
+<a href="http://t.me/AinAssensio" target="_blank"> <img src="assets/images/telegram.jpg" width="75px"> </a>
+<br>
+<h3> Telegram </h3>
+<br><br>
+<a href="https://wa.me/qr/MWLJQSHHSQNFB1" target="_blank"> <img src="assets/images/whatsapp.png" width="75px"> </a>
+<br>
+<h3> Whatsapp </h3>
+</center>
+<br><br><br>
+<a href="#Top_Page"> <img src="assets/images/arrow_up.png" width="70px" align="right"></a>  
+<br><br><br>
+  <footer>
+   <hr>
+  <center> <p> &copy; 2023 My Personal Website. All rights reserved. </p> </center>
+  </footer>
+</body>
+</html>
+
